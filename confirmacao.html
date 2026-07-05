@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Confirme sua presença no casamento de Eduardo & Aquinoam." />
+  <title>Confirmação | Eduardo & Aquinoam</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="nav-logo">E&A</span>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="historia.html">Nossa História</a></li>
+        <li><a href="presentes.html">Presentes</a></li>
+        <li><a href="confirmacao.html" class="active">Confirmação</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero hero-small">
+    <h1>Confirme sua Presença</h1>
+  </header>
+
+  <section class="section">
+    <p class="intro-text">Ficaremos muito felizes em celebrar esse dia com você! Por favor, confirme até 15/05/2028.</p>
+
+    <form id="rsvp-form" novalidate>
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder="Seu nome completo" />
+        <span class="error-message" id="name-error"></span>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Seu email" />
+        <span class="error-message" id="email-error"></span>
+      </div>
+      <div class="form-group">
+        <select id="attendance" name="attendance">
+          <option value="">Você vai comparecer?</option>
+          <option value="sim">Sim, estarei presente!</option>
+          <option value="nao">Infelizmente não poderei ir</option>
+        </select>
+        <span class="error-message" id="attendance-error"></span>
+      </div>
+      <div class="form-group">
+        <input type="number" id="guests" name="guests" placeholder="Número de acompanhantes" min="0" max="5" />
+        <span class="error-message" id="guests-error"></span>
+      </div>
+      <div class="form-group">
+        <textarea id="message" name="message" rows="4" placeholder="Deixe uma mensagem para os noivos (opcional)"></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Enviar Confirmação</button>
+      <p class="form-success" id="form-success"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>Eduardo &amp; Aquinoam • 13/06/2028</p>
+    <p class="footer-small">&copy; 2026 — Feito com carinho para o nosso grande dia</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
